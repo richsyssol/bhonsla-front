@@ -1,0 +1,58 @@
+// src/constants/pdCourses.js
+
+const pdCourses = [
+  {
+    id: "boys",
+    title: "Personality Development Course (Boys)",
+    duration: "14th April 2025 - 28th April 2025",
+    ageGroup: "12 to 15 Years",
+    qualification: "Class VI & above",
+    selection: "First come, first serve basis",
+    syllabus: [
+      "PT",
+      "Drill",
+      "Swimming",
+      "Self Defence",
+      "Yoga",
+      "Weapon Training",
+      "Shooting",
+      "Horse Riding",
+      "Group Discussion",
+      "Disaster Management",
+      "Fire Fighting",
+      "Cultural Programme",
+      "Public Speaking",
+    ],
+    admission: "26th Jan 2025 - 10th Apr 2025",
+    fee: "Rs 25,000/- (Including GST)",
+    registrationLink: "/register/boys",
+  },
+  {
+    id: "girls",
+    title: "Personality Development Course (Girls)",
+    duration: "05th May 2025 - 19th May 2025",
+    ageGroup: "12 to 15 Years",
+    qualification: "Class VI & above",
+    selection: "First come, first serve basis",
+    syllabus: [
+      "PT",
+      "Drill",
+      "Swimming",
+      "Self Defence",
+      "Yoga",
+      "Weapon Training",
+      "Shooting",
+      "Horse Riding",
+      "Group Discussion",
+      "Disaster Management",
+      "Fire Fighting",
+      "Cultural Programme",
+      "Public Speaking",
+    ],
+    admission: "26th Jan 2025 - 31st Apr 2025",
+    fee: "Rs 25,000/- (Including GST)",
+    registrationLink: "/register/girls",
+  },
+];
+
+export default pdCourses;
