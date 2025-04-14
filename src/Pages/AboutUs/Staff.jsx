@@ -34,13 +34,14 @@
 
 // export default Staff;
 
+import PageSection from "../../components/PageSection/PageSection";
 import StaffSection from "../../components/StaffSection/StaffSection";
 import {
   academicCoordinator,
   teachingStaff,
   militaryTrainingStaff,
   administrativeStaff,
-} from "../../constants/Staffdata";
+} from "../../constants/AboutUs/Staffdata";
 
 const Staff = () => {
   const teachingColumns = [
@@ -58,33 +59,36 @@ const Staff = () => {
   ];
 
   return (
-    <div className="p-6 max-w-6xl mx-auto space-y-10">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">Staff Page</h1>
+    <div>
+      <PageSection page="staff" />
+      <div className="p-6 max-w-6xl mx-auto space-y-10">
+        <div className="text-center">
+          {/* <h1 className="text-4xl font-bold text-gray-800 mb-2">Staff Page</h1> */}
+        </div>
+
+        <div className="bg-blue-100 rounded-xl p-4 text-lg font-semibold text-center shadow">
+          📘 Academic Coordinator:{" "}
+          <span className="text-blue-900">{academicCoordinator.name}</span>
+        </div>
+
+        <StaffSection
+          title="Teaching Staff"
+          columns={teachingColumns}
+          data={teachingStaff}
+        />
+
+        <StaffSection
+          title="Military Training Staff"
+          columns={simpleColumns}
+          data={militaryTrainingStaff}
+        />
+
+        <StaffSection
+          title="Administrative Staff"
+          columns={simpleColumns}
+          data={administrativeStaff}
+        />
       </div>
-
-      <div className="bg-blue-100 rounded-xl p-4 text-lg font-semibold text-center shadow">
-        📘 Academic Coordinator:{" "}
-        <span className="text-blue-900">{academicCoordinator.name}</span>
-      </div>
-
-      <StaffSection
-        title="Teaching Staff"
-        columns={teachingColumns}
-        data={teachingStaff}
-      />
-
-      <StaffSection
-        title="Military Training Staff"
-        columns={simpleColumns}
-        data={militaryTrainingStaff}
-      />
-
-      <StaffSection
-        title="Administrative Staff"
-        columns={simpleColumns}
-        data={administrativeStaff}
-      />
     </div>
   );
 };
