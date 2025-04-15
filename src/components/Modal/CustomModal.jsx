@@ -34,13 +34,14 @@ const CustomModal = () => {
         centered
         className="p-0"
         width="90%"
-        style={{
-          maxWidth: "410px", // consistent size
-        }}
-        bodyStyle={{
-          padding: 0,
-          borderRadius: "12px",
-          overflow: "hidden",
+        styles={{
+          content: {
+            maxWidth: "410px",
+            padding: 0,
+            borderRadius: "12px",
+            overflow: "hidden",
+            margin: "0 auto", // Center on smaller screens
+          },
         }}
       >
         {/* Image Section */}

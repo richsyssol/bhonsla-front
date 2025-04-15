@@ -1,7 +1,6 @@
 import React from "react";
 import FrontSection from "./FrontSection";
 import Services from "./Services";
-import Modal from "../../../components/Modal/CustomModal";
 import FrontIntro from "./FrontIntro";
 import ApplyNow from "./ApplyNow";
 import UpcomingEvents from "./UpcomingEvents";
@@ -9,6 +8,7 @@ import OurFundamentals from "./OurFundamentals";
 import InstagramFeed from "./InstagramFeed";
 import UpdatesSection from "./UpdatesSection";
 import FacilitiesSection from "./FacilitiesSection";
+import CustomModal from "../../../components/Modal/CustomModal";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
       <FrontIntro />
       <UpcomingEvents />
       <OurFundamentals />
-      <Modal />
+      <CustomModal />
       <Services />
       <FacilitiesSection />
       <InstagramFeed />

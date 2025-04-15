@@ -1,7 +1,7 @@
 import logo from "./Images/bmslogo.jpg";
 export { logo };
 
-import DemoVideo from "./Videos/DemoVideo.mp4";
+//import DemoVideo from "./Videos/DemoVideo.mp4";
 import Conspectus from "./pdf/calender.pdf";
 
 import students from "./Images/students.jpg";
@@ -15,7 +15,6 @@ import dailyroutine from "./Images/dailyroutine.jpg";
 import achivements from "./Images/achivements.jpg";
 
 export {
-  DemoVideo,
   Conspectus,
   students,
   students1,

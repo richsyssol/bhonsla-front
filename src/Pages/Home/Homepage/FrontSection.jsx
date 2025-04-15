@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { DemoVideo } from "../../../../public/assets";
+//import { demovideo } from "../../../assets";
+//import { DemoVideo } from "../../../../public/assets";
 
 function FrontSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpens, setIsModalOpens] = useState(false);
 
   return (
     <div className="relative w-full h-[65vh] overflow-hidden">
@@ -16,7 +17,7 @@ function FrontSection() {
           muted
           playsInline
         >
-          <source src={DemoVideo} type="video/mp4" />
+          <source src="s" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -40,7 +41,7 @@ function FrontSection() {
             1995, it joined the Indian Public Schools Conference.
           </p>
           <button
-            onClick={() => setIsModalOpen(true)}
+            onClick={() => setIsModalOpens(true)}
             className="mt-4 px-6 py-2 bg-gray-200 text-black font-semibold rounded-full"
           >
             WATCH VIDEO
@@ -49,19 +50,19 @@ function FrontSection() {
       </div>
 
       {/* Modal */}
-      {isModalOpen && (
+      {isModalOpens && (
         <div className="fixed inset-0 z-30 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
           <div className="relative w-full max-w-2xl h-[40vh] sm:h-[50vh] md:h-[60vh] bg-white rounded-lg overflow-hidden shadow-lg">
             {/* Close Button */}
             <button
               className="absolute top-2 right-3 text-black text-2xl font-bold z-10"
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => setIsModalOpens(false)}
             >
               &times;
             </button>
             {/* Local Video */}
             <video className="w-full h-full object-contain" controls autoPlay>
-              <source src={DemoVideo} type="video/mp4" />
+              <source src="" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

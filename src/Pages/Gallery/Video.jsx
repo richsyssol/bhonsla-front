@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "antd";
 import { motion } from "framer-motion";
-import videoGallery from "../../constants/Gallery/videoGallery/"; // ✅ default import
+//import videoGallery from "../../constants/Gallery/videoGallery/"; // ✅ default import
 
 const { Meta } = Card;
 
