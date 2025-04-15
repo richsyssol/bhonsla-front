@@ -1,7 +1,6 @@
 import React from "react";
-import AcademyBanner from "./AcadmyBanner";
+
 import { students4 } from "../../../public/assets/index";
-import FAQSection from "./FAQSection";
 
 function ApplyNowSection() {
   const handleButton = () => {

@@ -1,9 +1,8 @@
 import React from "react";
 import { Card, Typography, List } from "antd";
 import PageSection from "../../components/PageSection/PageSection";
-import mission from "../../constants/AboutUs/missionData";
+import missionData from "../../constants/AboutUs/missionData";
 const { Title, Paragraph, Text } = Typography;
-
 
 const Mission = () => {
   return (

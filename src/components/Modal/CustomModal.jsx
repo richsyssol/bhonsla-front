@@ -21,7 +21,7 @@ const CustomModal = () => {
 
   const handleLearnMore = () => {
     setIsModalOpen(false);
-    navigate("/applynow");
+    navigate("/admission");
   };
 
   return (

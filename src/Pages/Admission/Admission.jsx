@@ -10,7 +10,6 @@ const Admission = () => {
   return (
     <div>
       <ApplyNowSection />
-
       <AcademyBanner />
       <FAQSection />
       <StudentApplicationForm />

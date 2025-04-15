@@ -25,7 +25,7 @@ import Alumni from "./Pages/Home/Navigation/Alumni";
 import Courses from "./Pages/Home/Navigation/Courses";
 import EMagazine from "./Pages/Home/Navigation/E-Magazine";
 import Layout from "./layout/Layout";
-import ApplyNowSection from "./Pages/Admission/ApplyNowSection";
+// import ApplyNowSection from "./Pages/Admission/ApplyNowSection";
 import "./App.css";
 
 import Aboutus from "./Pages/AboutUs/Aboutus";
@@ -42,9 +42,15 @@ import SmtCourses from "./Pages/Courses/SmtCourses";
 import Guidelines from "./Pages/Courses/Guidelines";
 import PdCourses from "./Pages/Courses/PdCourses";
 
-import Ramdandee from "./Pages/E-Magazine/Ramdandee";
 import Gallery from "./Pages/Home/Navigation/Gallery";
 import StudentApplicationForm from "./Pages/Admission/StudentApplicationForm";
+
+import BlogUpdates from "./Pages/Blog&Updates/BlogUpdates";
+import BlogDetails from "./Pages/Blog&Updates/BlogDetails";
+import Ramdandee from "./Pages/E-Magazine/Ramdandee";
+import Activities from "./Pages/Activities/Activities";
+import ApplyNow from "./Pages/Home/Homepage/ApplyNow";
+import ApplyNowSection from "./Pages/Admission/ApplyNowSection";
 
 function App() {
   const router = createBrowserRouter(
@@ -59,7 +65,7 @@ function App() {
         <Route path="/aboutus/pta" element={<Pta />} />
         <Route path="/aboutus/commandantdesk" element={<Commandantdesk />} />
         <Route path="/aboutus/principaldesk" element={<Principaldesk />} />
-
+        <Route path="/applynowsection" element={<ApplyNowSection />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/admission/secondary" element={<Secondary />} />
         <Route path="/admission/Juniorcollege" element={<Juniorcollege />} />
@@ -87,9 +93,15 @@ function App() {
         <Route path="/courses/guidelines" element={<Guidelines />} />
         <Route path="/courses/smtc" element={<SmtCourses />} />
 
-        <Route path="/emagazine" element={<EMagazine />} />
+        {/* <Route path="/emagazine" element={<EMagazine />} />
         <Route path="/emagazine/ramdandee" element={<Ramdandee />} />
-        <Route path="/applynow" element={<Admission />} />
+        <Route path="/applynow" element={<Admission />} /> */}
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/activities/calendar" element={<Calendar />} />
+        <Route path="/activities/ramdandee" element={<Ramdandee />} />
+
+        <Route path="/blog" element={<BlogUpdates />} />
+        <Route path="/blogdetails/:id" element={<BlogDetails />} />
 
         <Route
           path="/studentapplicationform"
